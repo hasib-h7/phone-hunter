@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surokkha Gov </title>
+    <style>
+.border-expand {
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #183253;
+}
+
+.border-expand::before,
+.border-expand::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #183253;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.border-expand::before {
+  right: 50%;
+}
+
+.border-expand::after {
+  left: 50%;
+}
+
+.border-expand:hover::before,
+.border-expand:hover::after {
+  width: 50%;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="border-expand">
+        <p>Some text here</p>
+      </div>
+      
+      
+      
+</body>
+</html>
